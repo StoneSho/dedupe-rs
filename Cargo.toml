@@ -1,0 +1,20 @@
+[package]
+name = "dedupe-rs"
+version = "0.1.0"
+edition = "2021"
+description = "A safe Rust CLI that finds duplicate files by size then SHA-256"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/StoneSho/dedupe-rs"
+keywords = ["cli", "dedupe", "duplicate", "hash"]
+categories = ["command-line-utilities", "filesystem"]
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+sha2 = "0.10"
+thiserror = "1"
+walkdir = "2"
+
+[dev-dependencies]
+tempfile = "3"
